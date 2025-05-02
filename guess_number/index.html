@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess_number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Guess the number</h1>
+        <h4>pick the range as per your level</h4>
+        <div class="middle">
+            <input type="number" placeholder="starting range" id="num1">
+            <input type="number" placeholder="ending range" id="num2">
+        </div>
+        <input type="number" placeholder="guess the number in range" id="guess">
+        <p id="hints"></p>
+        <div class="bottom">
+            <button onclick="play.init()">start game</button>
+            <button onclick="handleGuess()">Guess</button>
+            <button onclick="resetGame()">New Game</button>
+        </div>
+        <div class="hidden" style="display: none;">
+            <h2>Congratulations! you guess the number!</h2>
+            <p id="message"></p>
+            <p class="answer"></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
